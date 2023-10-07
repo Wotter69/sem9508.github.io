@@ -1,0 +1,61 @@
+.navbar {
+    background-color: rgb(144, 194, 188);
+    height: 120px;
+    margin-bottom: 30px;
+    text-align: center;
+    line-height: 120px;
+}
+
+body {
+    background-color: rgb(185, 241, 234);
+    margin:0px;
+    padding:0px;
+}
+h1, p {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.formclass {
+
+    margin-left: 10px;
+    margin-right: 10px;
+    border-radius: 10px;
+    display: inline-block;
+
+
+}
+
+.divclass {
+    display: block;
+    text-align: center;
+    margin-left: 10%;
+    margin-right: 10%;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    border-radius: 10px;
+    background-color: rgb(144, 194, 188);
+}
+
+.button {
+    display: inline-block;
+    margin: 20px;
+    padding: 20px;
+    font-weight: 600;
+    font-size: large;
+    border: 0px;
+    text-align: center;
+    border-radius: 10px;
+    background-color: rgb(157, 212, 206);
+    width: auto;
+    height: 80px;
+    padding-left: 60px;
+    padding-right: 60px;
+}
+
+form {
+    margin: 0px;
+}
+
+.button:hover {
+    background-color:  rgb(99, 141, 136);
+}

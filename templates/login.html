@@ -1,0 +1,18 @@
+{% load static %}
+<link rel="stylesheet" href="{% static 'login.css' %}">
+
+<div class="navbar">
+    <h1>Login to your account</h1>
+</div>
+
+<form action="login" method="POST" class="formclass">
+    {% csrf_token %}
+    <div class="inputfields">
+    <input type="text" name="username" placeholder="username" class="inputfield">
+    <input type="password" name="password" placeholder="password" class="inputfield"><br>
+    <input type="submit" class="button">
+    </div>
+</form>
+{% for message in messages %}
+<p class="errormessage">{{message}}</p>
+{% endfor %}

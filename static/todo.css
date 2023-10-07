@@ -1,0 +1,150 @@
+.navbar {
+    background-color: rgb(144, 194, 188);
+    height: auto;
+    margin-bottom: 30px;
+    text-align: center;
+    line-height: auto;
+}
+
+body {
+    background-color: rgb(185, 241, 234);
+    margin:0px;
+    padding:0px;
+}
+
+h1, p {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.addtext, .removetext {
+    font-size: larger;
+}
+
+.title, .signoutbutton {
+    display: inline-block;
+    vertical-align:middle;
+}
+
+.toadminbutton {
+    position: absolute;
+    right: 20px;
+    top: 65px;
+    background-color: rgb(124, 168, 163);
+    border:0px;
+    border-radius: 10px;
+    padding:10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    width:140px;
+    font-weight: 800;
+}
+
+.signoutbutton {
+    position: absolute;
+    right: 20px;
+    top: 15px;
+    background-color: rgb(124, 168, 163);
+    border:0px;
+    border-radius: 10px;
+    padding:10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    width:140px;
+    font-weight: 800;
+}
+
+.signoutbutton:hover, .toadminbutton:hover {
+    background-color: rgb(99, 141, 136);
+}
+
+.title {
+    margin-top:40px;
+    margin-bottom: 40px;
+}
+.adddiv, .removediv {
+    display: inline-block;
+    margin-left: 40px;
+    margin-right: 40px;
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color: rgb(124, 168, 163);
+    border-radius: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.parentaddremovediv {
+    text-align: center;
+}
+
+.submitbutton {
+    background-color: rgb(157, 212, 206);
+    border:0px;
+    padding:5px;
+    border-radius: 10px;
+    height: 30px;
+}
+
+.tasksdiv {
+    text-align: center;
+    margin-left: 20%;
+    margin-right: 20%;
+    background-color: rgb(99, 141, 136);
+    border-radius: 10px;
+    height: auto;
+    padding-bottom: 20px;
+    padding-top: 10px;
+    margin-top: 20px;
+
+}
+
+.inputfield {
+    background-color: rgb(255, 255, 255);
+    border:0px;
+    border-radius: 10px;
+    height: 30px;
+    margin: 5px;
+}
+
+.tasks {
+    font-size: large;
+    font-weight:400;
+    display: inline-block;
+    margin: 0px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    width: 80%;
+}
+
+.deletebutton {
+    display: inline-block;
+    position: fixed;
+    right: calc(20% + 20px);
+    background-color: rgb(124, 168, 163);
+    border: none;
+    padding: 3px;
+    border-radius: 10px;
+    padding-right: 10px;
+    padding-left: 10px;
+    font-weight:bolder;
+
+}
+
+.deletebutton:hover {
+    background-color: rgb(157, 212, 206);
+}
+
+.deleteform {
+    display: inline-block;
+}
+
+.taskdiv {
+    background-color: rgb(144, 194, 188);
+    margin-bottom: 5px;
+    margin-top: 5px;
+    margin-left: 10px;
+    margin-right: 10px;
+    border-radius: 20px;
+}

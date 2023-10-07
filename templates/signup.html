@@ -1,0 +1,23 @@
+{% load static %}
+<link rel="stylesheet" href="{% static 'signup.css' %}">
+<div class="navbar">
+    <h1>make a new account</h1>
+</div>
+
+{% for message in messages %}
+<div class="errordiv">
+<p class="errortext">{{message}}</p>
+</div>
+{% endfor %}
+
+<form action="signup" method="POST" class="formclass">
+    {% csrf_token %}
+    <div class="inputfields">
+    <input type="text" name="username" class="inputfield" placeholder="username">
+    <input type="password" name="password" class="inputfield" placeholder="password">
+    <input type="password" name="password2" class="inputfield" placeholder="password (again)"><br>
+    <input type="submit" value="signup" class="button">
+    </div>
+</form>
+
+

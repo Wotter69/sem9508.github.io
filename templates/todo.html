@@ -1,0 +1,42 @@
+{% load static %}
+<link rel="stylesheet" href="{% static 'todo.css' %}">
+<div class="navbar">
+    <h1 class="title">To do</h1>
+    <form action="signout">
+        <button class="signoutbutton">Sign Out</button>
+    </form>
+    {% if user_is_admin == True %}
+    <form action="admin">
+        <button class="toadminbutton">Admin Panel</button>
+    </form>
+    {% endif %}
+</div>
+
+<div class="parentaddremovediv">
+    <div class="adddiv">
+        <form action="add_task" method="get">
+            <p class="addtext">add task:</p>
+            <input type="text" name="task_info" class="inputfield">
+            <input type="submit" value="submit" class="submitbutton">
+        </form>
+    </div>
+    <div class="removediv">
+        <form action="remove_task" method="get">
+            <p class="removetext">remove task:</p>
+            <input type="text" name="task_info" class="inputfield">
+            <input type="submit" value="submit" class="submitbutton">
+        </form>
+    </div>
+</div>
+<div class="tasksdiv">
+    <h1 class="taskstitle">all tasks</h1>
+    {% for task in all_tasks %}
+    <div class="taskdiv">
+        <p class="tasks">{{task.task}}</p>
+        <form class="deleteform" action="remove_task">
+            <input type="hidden" name="task_info" value="{{task.task}}">
+            <button type="submit" class="deletebutton">delete</button>
+        </form><br>
+    </div>
+    {% endfor %}
+</div>

@@ -1,0 +1,61 @@
+.navbar {
+    background-color: rgb(144, 194, 188);
+    height: 120px;
+    margin-bottom: 30px;
+    text-align: center;
+    line-height: 120px;
+}
+
+body {
+    background-color: rgb(185, 241, 234);
+    margin:0px;
+    padding:0px;
+}
+h1, p {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.inputfields {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.inputfield {
+    margin: 20px;
+    border: 0px;
+    border-radius: 10px;
+    height: 30px;
+}
+
+.formclass {
+    background-color: rgb(124, 168, 163);
+    margin-left: 20%;
+    margin-right: 20%;
+    border-radius: 10px;
+}
+
+.button {
+    margin: 20px;
+    border: 0px;
+    border-radius: 10px;
+    background-color: rgb(157, 212, 206);
+    padding: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.errortext {
+    text-align: center;
+    background-color: red;
+    margin-left: 40%;
+    margin-right: 40%;
+    padding:5px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 10px;
+    font-weight: 700;
+}
+
+.errordiv {
+    text-align: center;
+}
